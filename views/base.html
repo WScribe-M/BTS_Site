@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    {% block stylesheet %}
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Home {% endblock %}</title>
+</head>
+<body>
+    <h1>Base HTML</h1>
+
+    <ul>
+        <li><a href ={{url}}"start.php?c=user&t=one">Page 1</a></li>
+        <li><a href ={{url}}"start.php?c=user&t=list">Page 2</a></li>
+        <li><a href ={{url}}"start.php?c=index&t=index">Page 3</a></li>
+    </ul>
+
+   
+    {% block body %}
+    {% endblock %}
+
+    {% block script %}
+    {% endblock %}
+</body>
+</html>
